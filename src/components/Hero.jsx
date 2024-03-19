@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import TextSpan from "./TextSpan";
+import dev from "../images/woman_developer-transformed.png"
 // import Model from "../../public/images/Scene";
 
 
@@ -48,7 +49,7 @@ const Hero = () => {
           </div>
           <div className="relative ml-10">
             <img
-              src="./images/woman_developer-transformed.png"
+              src={dev}
               alt="Developer"
               className="h-auto animate-wiggle"
             />

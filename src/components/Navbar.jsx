@@ -1,12 +1,13 @@
 
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
+import me from "../images/me-modified.png";
+import search from "../images/search.png";
 const Navbar = () => {
   return (
     <div className="flex justify-between items-center text-white p-4 ml-8 mr-8">
       <div className="flex items-center p-3 mr-96">
-        <img src="./images/me-modified.png" alt="Logo" className="mr-16 h-28" />
+        <img src={me} alt="Logo" className="mr-16 h-28" />
         <ul className="flex space-x-4 cursor-pointer">
           <li><NavLink to="/">Home</NavLink></li> 
           <li><NavLink to="/skills">Skills</NavLink></li> 
@@ -15,7 +16,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="flex items-center">
-        <img src="./images/search.png" alt="Search" className="mr-6 w-6 cursor-pointer" />
+        <img src={search} alt="Search" className="mr-6 w-6 cursor-pointer" />
         <button className="text-white px-4 py-2 rounded-xl bg-pink-600 ">Hire Now</button>
       </div>
     </div>

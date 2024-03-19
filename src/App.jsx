@@ -12,7 +12,7 @@ function App() {
     <Router>
       <div className="relative h-screen overflow-y-scroll bg-black">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/p" element={<Home />} />
           <Route path="/skills" element={<SkillsPage />} />
         </Routes>
       </div>
